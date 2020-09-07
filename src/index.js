@@ -28,11 +28,19 @@ class Clock extends React.Component {
     });  
   }
   
+  handleClick(e) {    
+    e.preventDefault();    
+    console.log('The link was clicked.');  
+  }
+
   render() {
     return (
       <div>
         <h1>This is the code in index.js</h1>
         <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <a href="#" onClick={handleClick}>      
+          Click me
+        </a>
       </div>
     );
   }
