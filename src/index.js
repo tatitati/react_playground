@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Clock from './clock.js';
-import Toggle from './toggle.js';
+import Clock from './myfiles/clock.js';
+import Toggle from './myfiles/toggle.js';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
