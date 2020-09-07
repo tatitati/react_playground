@@ -1,52 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Clock from './clock.js';
+import Toggle from './toggle.js';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {date: new Date()};  
-  }
-
-  componentDidMount() {
-    this.timerID = setInterval(      
-        () => this.tick(),
-        1000    
-      );  
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);  
-  }
-
-  tick() {    
-    this.setState({      
-      date: new Date()    
-    });  
-  }
-  
-  handleClick(e) {    
-    e.preventDefault();    
-    console.log('The link was clicked.');  
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>This is the code in index.js</h1>
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
-        <a href="#" onClick={handleClick}>      
-          Click me
-        </a>
-      </div>
-    );
-  }
-}
 
 ReactDOM.render(
-    <Clock />,        
+    [
+      <h1> From clock.js </h1>,
+      <h3> From clock.js </h3>,
+      <Clock />, 
+      <h3> From toggle.js </h3>,
+      <Toggle />
+    ],
   document.getElementById('root')
 );
