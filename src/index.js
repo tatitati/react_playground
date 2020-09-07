@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     [
-      <h1> From clock.js </h1>,
+      <h1> From index.js </h1>,
       <h3> From clock.js </h3>,
       <Clock />, 
       <h3> From toggle.js </h3>,
