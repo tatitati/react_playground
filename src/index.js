@@ -4,7 +4,7 @@ import './index.css';
 import Clock from './myfiles/clock.js';
 import Toggle from './myfiles/toggle.js';
 import LoginControl from './myfiles/LoginControl.js';
-import Greeting from './myfiles/Greeting.js';
+import Page from './myfiles/WarningBanner.js';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -18,8 +18,12 @@ ReactDOM.render(
           <h3>    From toggle.js </h3>,
                 <Toggle />,
           <h3>    From LoginControl.js </h3>,
-                <LoginControl />,                
+                <LoginControl />,         
+          <h3>    From WarningBanner.js </h3>,                
+                <Page />,
     ],
   document.getElementById('root')
 );
+
+
 
